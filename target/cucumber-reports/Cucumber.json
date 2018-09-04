@@ -1,0 +1,142 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4060705481,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Customer places an order by purchasing an item from search",
+        "description": "",
+        "id": "automated-end2end-tests;customer-places-an-order-by-purchasing-an-item-from-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 677514339,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6247604229,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the home page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5502957856,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "they search for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dress",
+                  "offset": 17
+                }
+              ],
+              "location": "HomePageSteps.they_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7790663010,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "choose to buy the first item",
+            "match": {
+              "location": "ProductPageSteps.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10476732302,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "moves to checkout from mini cart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14869486,
+              "error_message": "java.util.NoSuchElementException: No value present\r\n\tat java.util.Optional.get(Unknown Source)\r\n\tat dataProvider.JsonDataReader.getCustomerByName(JsonDataReader.java:39)\r\n\tat stepDefinitions.CheckoutPageSteps.enter_personal_details_on_checkout_page(CheckoutPageSteps.java:21)\r\n\tat ✽.And enters \"Andy\" personal details on the checkout page(End2End_Tests.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "enters \"Andy\" personal details on the checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Andy",
+                  "offset": 8
+                }
+              ],
+              "location": "CheckoutPageSteps.enter_personal_details_on_checkout_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "selects the same delivery address",
+            "match": {
+              "location": "CheckoutPageSteps.selects_the_same_delivery_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "places the order",
+            "match": {
+              "location": "CheckoutPageSteps.places_the_order()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automated End2End Tests",
+    "description": "Description: The purpose of this feature is to test End 2 End integration",
+    "id": "automated-end2end-tests",
+    "keyword": "Feature",
+    "uri": "End2End_Tests.feature"
+  }
+]

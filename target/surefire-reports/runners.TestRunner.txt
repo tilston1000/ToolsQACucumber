@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 39.915 sec <<< FAILURE!
+And enters "Andy" personal details on the checkout page(| Andy |)  Time elapsed: 0.002 sec  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at dataProvider.JsonDataReader.getCustomerByName(JsonDataReader.java:39)
+	at stepDefinitions.CheckoutPageSteps.enter_personal_details_on_checkout_page(CheckoutPageSteps.java:21)
+	at ?.And enters "Andy" personal details on the checkout page(End2End_Tests.feature:9)
+
+| Andy |  Time elapsed: 0.002 sec  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at dataProvider.JsonDataReader.getCustomerByName(JsonDataReader.java:39)
+	at stepDefinitions.CheckoutPageSteps.enter_personal_details_on_checkout_page(CheckoutPageSteps.java:21)
+	at ?.And enters "Andy" personal details on the checkout page(End2End_Tests.feature:9)
+
